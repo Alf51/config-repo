@@ -1,36 +1,7 @@
 spring:
   application:
     name: api-gateway
-  cloud:
-    gateway:
-      routes:
-        - id: accounting-service
-          uri: lb://ACCOUNTING-SERVICE
-          predicates:
-            - Path=/api/v1/accounting/**
-          filters:
-            - AuthenticationFilter
-
-        - id: security-service
-          uri: lb://SECURITY-SERVICE
-          predicates:
-            - Path=/api/v1/security/**
-          filters:
-            - AuthenticationFilter
-
-        - id: identity-service
-          uri: lb://IDENTITY-SERVICE
-          predicates:
-            - Path=/auth/**
-
-        - id: onboarding-service
-          uri: lb://ONBOARDING-SERVICE
-          predicates:
-            - Path=/api/v1/onboarding/**
-          filters:
-            - AuthenticationFilter
-
-
+    
 service:
   identity:
     url: ${IDENTITY_URL}
