@@ -22,7 +22,12 @@ spring:
         - id: onboarding-service
           uri: lb://ONBOARDING-SERVICE
           predicates:
-            - Path=/api/v1/onboarding/**  
+            - Path=/api/v1/onboarding/**
+
+        - id: profiler-service
+          uri: lb://ONBOARDING-SERVICE
+          predicates:
+            - Path=/api/**      
     
 service:
   identity:
