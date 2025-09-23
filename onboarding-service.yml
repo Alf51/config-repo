@@ -58,7 +58,7 @@ resilience4j:
         base-config: default
       accounting-service:
         base-config: default
-      onboarding-service:
+      profiler-service:
         base-config: default  
   retry:
     retry-aspect-order: 2
@@ -74,7 +74,7 @@ resilience4j:
         base-config: default
       accounting-service:
         base-config: default
-      onboarding-service:
+      profiler-service:
         base-config: default
   
     
