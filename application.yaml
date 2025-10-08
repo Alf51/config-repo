@@ -4,3 +4,11 @@ eureka:
       default-zone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
+spring:
+  kafka:
+      topics:
+        onboarding: ${KAFKA_INTERNAL_ONBOARDING_RESPONSES}
+        accounting: ${KAFKA_ACCOUNTING_ALLOCATE_REQUESTS}
+        security: ${KAFKA_SECURITY_CHECK_REQUESTS}
+        notification: ${KAFKA_NOTIFICATION_SEND_REQUESTS}
