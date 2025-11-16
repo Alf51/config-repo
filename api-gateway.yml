@@ -34,4 +34,4 @@ service:
     url: ${IDENTITY_URL}
 
 server:
-  port: 57872
+  port: 67871
